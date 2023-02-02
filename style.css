@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, 'Poppins';
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+    color: #fff;
+}
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(Images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+    position: relative;
+}
+nav {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 50px
+}
+.SignInBtn{
+    background-color: #e50914;
+    float: right;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+    padding: 9px 17px;
+    border-radius: 3.7px;
+}
+.SignInBtn:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+#LanguageSelector {
+    margin-right: 30px;
+    padding: 7.8px 14px;
+    font-size: 1rem;
+    line-height: normal;
+    border-radius: 2px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+}
+#LanguageSelector option{
+    background-color: #444;
+}
+
+/* Header content CSS */
+
+.header-content {
+    /* border: 1px solid red; */
+    margin: auto;
+    max-width: 950px;
+    text-align: center;
+    position: relative;
+    margin-top: 159px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.header-content h1{
+    font-size: 3.125rem;
+}
+.header-content h3{
+    font-size: 1.573rem;
+    font-weight: 400;
+    padding-top: 15px;
+    padding-bottom: 29px;
+}
+.header-content p{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+
+/* EMAIL ENTER PART CSS */
+
+.Email-signup input {
+    /* padding: 18px 130px; */
+    padding: 18px 150px;
+    padding-left: 15px;
+    font-weight: 400;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: start;
+}
+.Email-signup button {
+    padding: 18px 50px;
+    /* font-size: 1rem; */
+    font-weight: 400;
+    background-color: #e50914;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.Email-signup button:hover{
+    cursor: pointer;
+}
+.E1 {
+    border-color: transparent;
+    font-size: 1.1rem;
+}
+
+/* ---------------STYLING FEATURE PART------------- */
+.feature-container::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 8px;
+    background: #222;
+    position: absolute; 
+}
+
+.row {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.row h1{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.row p{
+    font-size: 25px;
+}
+.column1 {
+    /* border: 2px solid yellow; */
+    flex-basis: 50%;
+    flex-wrap: wrap;
+    max-width: 550px;
+    margin: 100px;
+}
+.column2 {
+    /* border: 2px solid yellow; */
+    flex-basis: 50%;
+    flex-wrap: wrap;
+    margin: 100px;
+}
+.row img{
+    max-width: 480px;
+}
